@@ -280,16 +280,10 @@ p a{
 
 .imgTips{
     margin:10px auto;
-    width: 400px;
-    height: 400px;
-    transition: height 2s, width 1s;
+    width: 40%;
     display:block;
 }
 
-.imgTips:hover{
-    height:500px;
-    width: 500px;
-}
 
 .parrafoTabla{
     font-size:17px;

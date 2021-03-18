@@ -1,0 +1,109 @@
+.colorTips{
+    background-color:rgb(253, 249, 246);
+    width: 100%;
+
+    .tituloTips{
+        font-size:40px;
+        font-family:'Montserrat Alternates', sans-serif;
+        color: rgb(247, 127, 207);
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-width: 10px;
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+
+    .gridTips{
+        display:grid;
+        grid-template-areas:
+        "curcuma pimienta jengibre";
+        grid-column-gap: 60px;
+        justify-items: center;
+        justify-content: center;
+        align-self: center;
+    
+        #curcuma{
+            grid-area: curcuma;
+            border: solid rgb(247, 127, 207);
+          }
+          
+          #pimienta{
+            grid-area: pimienta;
+            border: solid rgb(247, 127, 207);
+          }
+          
+          #jengibre{
+            grid-area: jengibre;
+            border: solid rgb(247, 127, 207);
+          }
+          
+          .colorTips{
+            background-color:rgb(253, 249, 246);
+            width: 100%;
+        }
+
+        .listaTabla {
+            font-size:17px;
+            font-family:'Sansita Swashed', cursive;
+            color: rgb(39, 85, 116);
+            text-align: justify;
+            margin-left:20px;
+        }
+        
+        .tituloTabla{
+            font-size:20px;
+            font-family:'Sansita Swashed', cursive;
+            color: rgb(252, 81, 195);
+            text-align: center;
+        }
+
+        .parrafoTabla{
+            font-size:17px;
+            font-family:'Sansita Swashed', cursive;
+            color: rgb(39, 85, 116);
+            text-align: center;
+            max-width: 300px;
+        }    
+    }
+
+    .imgTips{
+        margin:10px auto;
+        width: 400px;
+        height: 400px;
+        transition: height 2s, width 1s;
+        display:block;
+        
+    }
+
+    .imgTips:hover{
+        height:500px;
+        width: 500px;
+    }
+
+    .tituloTips{
+        font-size:40px;
+        font-family:'Montserrat Alternates', sans-serif;
+        color: rgb(247, 127, 207);
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-width: 10px;
+        margin-left: 200px;
+        margin-right: 200px;
+      }
+      
+      .parrafoTips{
+        font-size:20px;
+        font-family:'Sansita Swashed', cursive;
+        color: rgb(247, 127, 207);
+        text-align: justify;
+        padding-left:200px;
+        padding-right:200px;
+        margin-top: 10px;
+    }
+
+    .videoT{
+        text-align: center;
+    }
+}
