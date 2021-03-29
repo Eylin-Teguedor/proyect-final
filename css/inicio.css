@@ -1,0 +1,288 @@
+.encabezado {
+  background-image: linear-gradient(315deg, #f896d7 0%, #d49ef3 74%);
+  width: 100%;
+  height: 140px; }
+  .encabezado .nombreP {
+    font-family: 'Dancing Script', cursive;
+    font-size: 60px;
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding-top: 10px; }
+  .encabezado .subtituloIni {
+    font-size: 40px;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    margin-top: 0 auto; }
+
+.bg-light {
+  background-color: #fcf7f9 !important;
+  border: solid #ed7efc; }
+
+.navbar {
+  padding-top: 2px;
+  padding-bottom: 2px; }
+
+.navbar-brand {
+  font-family: 'Dancing Script', cursive; }
+
+.navbar-light .navbar-brand {
+  color: #ee78cb; }
+
+.navbar-light .navbar-nav .show > .nav-link,
+.navbar-light .navbar-nav .nav-link.active {
+  color: #ee78cb;
+  font-family: 'Dancing Script', cursive; }
+
+.navbar-light .navbar-nav .nav-link.disabled {
+  color: #ee78cb;
+  font-family: 'Dancing Script', cursive; }
+
+.navbar-light .navbar-nav .nav-link {
+  color: #ee78cb;
+  font-family: 'Dancing Script', cursive;
+  font-size: 20px; }
+
+.cuerpoIni {
+  background-color: #fdf9f6;
+  width: 100%;
+  margin: 0 auto; }
+  .cuerpoIni .carousel-inner {
+    height: 550px; }
+  @media (max-width: 576px) {
+    .cuerpoIni .carousel-inner {
+      height: 50%; } }
+  .cuerpoIni .parrafoIni {
+    font-size: 25px;
+    font-family: 'Sansita Swashed', cursive;
+    color: #14d5f7;
+    max-width: 80%;
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+    margin: 0 auto; }
+  @media (max-width: 576px) {
+    .cuerpoIni .parrafoIni {
+      display: none !important; } }
+  .cuerpoIni .imgIni {
+    margin: 10px auto;
+    display: block;
+    width: 50%; }
+
+.form {
+  background-image: linear-gradient(315deg, #eec0c6 0%, #b5edf7 74%);
+  height: 200px; }
+  .form #registrate {
+    margin-top: 15px;
+    color: #fc51c3;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Sansita Swashed', cursive; }
+
+.colorTips {
+  background-color: #fdf9f6;
+  width: 100%; }
+  .colorTips .tituloTips {
+    font-size: 40px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: #f77fcf;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-width: 10px;
+    margin-left: 200px;
+    margin-right: 200px; }
+  .colorTips .gridTips {
+    display: grid;
+    grid-template-areas: "curcuma pimienta jengibre";
+    grid-column-gap: 60px;
+    justify-items: center;
+    justify-content: center;
+    align-self: center; }
+    .colorTips .gridTips #curcuma {
+      grid-area: curcuma;
+      border: solid #f77fcf; }
+    .colorTips .gridTips #pimienta {
+      grid-area: pimienta;
+      border: solid #f77fcf; }
+    .colorTips .gridTips #jengibre {
+      grid-area: jengibre;
+      border: solid #f77fcf; }
+    .colorTips .gridTips .colorTips {
+      background-color: #fdf9f6;
+      width: 100%; }
+    .colorTips .gridTips .listaTabla {
+      font-size: 17px;
+      font-family: 'Sansita Swashed', cursive;
+      color: #275574;
+      text-align: justify;
+      margin-left: 20px; }
+    .colorTips .gridTips .tituloTabla {
+      font-size: 20px;
+      font-family: 'Sansita Swashed', cursive;
+      color: #fc51c3;
+      text-align: center; }
+    .colorTips .gridTips .parrafoTabla {
+      font-size: 17px;
+      font-family: 'Sansita Swashed', cursive;
+      color: #275574;
+      text-align: center;
+      max-width: 300px; }
+  .colorTips .imgTips {
+    margin: 10px auto;
+    width: 400px;
+    height: 400px;
+    transition: height 2s, width 1s;
+    display: block; }
+  .colorTips .imgTips:hover {
+    height: 500px;
+    width: 500px; }
+  .colorTips .tituloTips {
+    font-size: 40px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: #f77fcf;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-width: 10px;
+    margin-left: 200px;
+    margin-right: 200px; }
+  .colorTips .parrafoTips {
+    font-size: 20px;
+    font-family: 'Sansita Swashed', cursive;
+    color: #f77fcf;
+    text-align: justify;
+    padding-left: 200px;
+    padding-right: 200px;
+    margin-top: 10px; }
+  .colorTips .videoT {
+    text-align: center; }
+
+.colorEntre {
+  background-color: #fdf9f6;
+  width: 100%; }
+  .colorEntre .tituloEntrevista {
+    font-size: 40px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: #f77fcf;
+    text-align: center;
+    padding-left: 20px auto;
+    border-width: 10px;
+    margin: 20px auto;
+    width: 100%;
+    height: 100px; }
+  .colorEntre .gridEntre {
+    display: grid;
+    grid-template-columns: 30% 40%;
+    grid-column-gap: 5px;
+    grid-template-columns: 1fr 1fr;
+    align-self: center;
+    justify-items: center; }
+    .colorEntre .gridEntre .subEntrevista {
+      font-size: 25px;
+      font-family: 'Sansita Swashed', cursive;
+      color: #f56377;
+      max-width: 80%;
+      text-align: center;
+      padding-left: 30%;
+      padding-right: 5px;
+      margin: 0 auto; }
+  .colorEntre .imgEnt {
+    margin: 10px auto;
+    display: block;
+    width: 50%; }
+  .colorEntre .qEntrevista {
+    font-size: 20px;
+    font-family: 'Sansita Swashed', cursive;
+    color: #fc51c3;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-width: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 15px; }
+  .colorEntre .pEntrevista {
+    font-size: 20px;
+    font-family: 'Sansita Swashed', cursive;
+    color: #f56377;
+    max-width: 80%;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-width: 10px;
+    margin: 0 auto; }
+  .colorEntre .imgEntrevista {
+    margin: 0 auto;
+    display: block;
+    width: 20%; }
+
+.tituloDeb {
+  font-size: 40px;
+  font-family: 'Sansita Swashed', cursive;
+  color: #91382d;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-width: 10px;
+  margin: 0 auto; }
+
+.pDebate {
+  font-size: 15px;
+  font-family: 'Sansita Swashed', cursive;
+  color: #f56377;
+  max-width: 20%;
+  text-align: justify;
+  padding-left: 20%;
+  padding-right: 20%;
+  margin: 0 auto; }
+
+.tituloArt {
+  font-size: 40px;
+  font-family: 'Montserrat Alternates', sans-serif;
+  color: #f77fcf;
+  text-align: center;
+  max-width: 100; }
+
+.parrafoArt {
+  font-size: 25px;
+  font-family: 'Sansita Swashed', cursive;
+  color: #cc0f28;
+  text-align: center;
+  padding-left: 15%;
+  padding-right: 15%;
+  margin: 0 auto; }
+
+.imgArt {
+  margin: 10px auto;
+  display: block; }
+
+.pieArt {
+  font-size: 15px;
+  font-family: 'Sansita Swashed', cursive;
+  color: #275574; }
+
+.tema {
+  font-size: 20px;
+  font-family: 'Sansita Swashed', cursive;
+  color: #fc51c3; }
+
+.subR {
+  font-size: 18px;
+  font-family: 'Sansita Swashed', cursive;
+  color: #fc51c3; }
+
+.mb-3 {
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+.form-control {
+  width: 30%; }
+
+.form-select {
+  width: 30%; }
+
+.btn-primary {
+  color: #04434e;
+  background-color: #f3a1d8;
+  border-color: white; }
