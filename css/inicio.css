@@ -13,7 +13,8 @@
     font-size: 40px;
     font-family: 'Dancing Script', cursive;
     text-align: center;
-    margin-top: 0 auto; }
+    margin-top: 0 auto;
+    color: white; }
 
 .bg-light {
   background-color: #fcf7f9 !important;
