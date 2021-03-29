@@ -48,11 +48,16 @@
   background-color: #fdf9f6;
   width: 100%;
   margin: 0 auto; }
+  .cuerpoIni .carousel-inner img {
+    width: 100%;
+    max-height: 500px; }
   .cuerpoIni .carousel-inner {
-    height: 550px; }
+    height: 500px;
+    width: 500px; }
   @media (max-width: 576px) {
     .cuerpoIni .carousel-inner {
-      height: 50%; } }
+      width: 576px;
+      height: 400px; } }
   .cuerpoIni .parrafoIni {
     font-size: 25px;
     font-family: 'Sansita Swashed', cursive;
@@ -90,9 +95,12 @@
     text-align: center;
     padding-left: 20px;
     padding-right: 20px;
-    border-width: 10px;
-    margin-left: 200px;
-    margin-right: 200px; }
+    border-width: 10px; }
+  @media (max-width: 576px) {
+    .colorTips .tituloTips {
+      max-width: 576px;
+      font-size: 0.5em;
+      text-align: center; } }
   .colorTips .gridTips {
     display: grid;
     grid-template-areas: "curcuma pimienta jengibre";
@@ -129,15 +137,20 @@
       color: #275574;
       text-align: center;
       max-width: 300px; }
+    .colorTips .gridTips .imgT {
+      margin: auto;
+      width: 300px;
+      height: 200px;
+      transition: height 2s, width 1s; }
+    .colorTips .gridTips .imgT:hover {
+      height: 220px;
+      width: 320px; }
   .colorTips .imgTips {
     margin: 10px auto;
-    width: 400px;
-    height: 400px;
+    width: 100;
+    height: 200;
     transition: height 2s, width 1s;
     display: block; }
-  .colorTips .imgTips:hover {
-    height: 500px;
-    width: 500px; }
   .colorTips .tituloTips {
     font-size: 40px;
     font-family: 'Montserrat Alternates', sans-serif;
@@ -151,7 +164,7 @@
   .colorTips .parrafoTips {
     font-size: 20px;
     font-family: 'Sansita Swashed', cursive;
-    color: #f77fcf;
+    color: #275574;
     text-align: justify;
     padding-left: 200px;
     padding-right: 200px;
@@ -232,10 +245,10 @@
   font-size: 15px;
   font-family: 'Sansita Swashed', cursive;
   color: #f56377;
-  max-width: 20%;
-  text-align: justify;
-  padding-left: 20%;
-  padding-right: 20%;
+  max-width: 100%;
+  text-align: center;
+  padding-left: 3%;
+  padding-right: 3%;
   margin: 0 auto; }
 
 .tituloArt {
