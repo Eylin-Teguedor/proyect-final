@@ -62,7 +62,7 @@
   .cuerpoIni .parrafoIni {
     font-size: 25px;
     font-family: 'Sansita Swashed', cursive;
-    color: #14d5f7;
+    color: #6e20ad;
     max-width: 80%;
     text-align: center;
     padding-left: 20%;
@@ -71,10 +71,61 @@
   @media (max-width: 576px) {
     .cuerpoIni .parrafoIni {
       display: none !important; } }
-  .cuerpoIni .imgIni {
-    margin: 10px auto;
-    display: block;
-    width: 50%; }
+  .cuerpoIni .gridIni {
+    display: grid;
+    grid-template-areas: "tips articulo" "reseña  entrevista";
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-items: center;
+    justify-content: center;
+    align-self: center; }
+    .cuerpoIni .gridIni #tips {
+      grid-area: tips;
+      border: solid #6e20ad;
+      background-color: #d4b7ec; }
+    .cuerpoIni .gridIni #articulo {
+      grid-area: articulo;
+      border: solid #6e20ad;
+      background-color: #d4b7ec; }
+    .cuerpoIni .gridIni #reseña {
+      grid-area: reseña;
+      border: solid #6e20ad;
+      background-color: #d4b7ec; }
+    .cuerpoIni .gridIni #entrevista {
+      grid-area: entrevista;
+      border: solid #6e20ad;
+      background-color: #d4b7ec; }
+    .cuerpoIni .gridIni .imgIni {
+      margin: auto;
+      width: 50%;
+      height: 50%;
+      display: block;
+      transition: height 2s, width 1s; }
+    .cuerpoIni .gridIni .imgIni:hover {
+      height: 52%;
+      width: 52%; }
+    .cuerpoIni .gridIni .pGrid {
+      font-size: 20px;
+      font-family: 'Sansita Swashed', cursive;
+      color: #722480;
+      text-align: center;
+      max-width: 600px; }
+  @media (max-width: 576px) {
+    .cuerpoIni .gridIni {
+      grid-template-columns: 500px;
+      grid-row-gap: 30px;
+      grid-template-areas: "tips" "articulo" "reseña" "entrevista"; } }
+  @media (max-width: 576px) {
+    .cuerpoIni .pGrid {
+      padding-left: 50px;
+      padding-right: 50px;
+      max-width: 576px;
+      font-size: 1.0em;
+      text-align: justify; } }
+  @media (max-width: 576px) {
+    .cuerpoIni .imgIni {
+      width: 30%;
+      height: 30%; } }
 
 .form {
   background-image: linear-gradient(315deg, #f896d7 0%, #d49ef3 74%);
@@ -194,20 +245,35 @@
     height: 100px; }
   .colorEntre .gridEntre {
     display: grid;
-    grid-template-columns: 30% 40%;
+    grid-template-areas: "letra imgE" "letra2 letra2" "letra3 imgE2" "letra4 letra4" "letra5 imgE" 3;
     grid-column-gap: 5px;
-    grid-template-columns: 1fr 1fr;
-    align-self: center;
-    justify-items: center; }
+    grid-row-gap: 5px;
+    justify-items: left;
+    justify-content: center;
+    align-self: center; }
+    .colorEntre .gridEntre #pEntre {
+      grid-area: letra; }
+    .colorEntre .gridEntre #imgE {
+      grid-area: imgE; }
+    .colorEntre .gridEntre #pEntreD {
+      grid-area: letra2; }
+    .colorEntre .gridEntre #imgEd {
+      grid-area: imgE2; }
+    .colorEntre .gridEntre #pEntres {
+      grid-area: letra3; }
+    .colorEntre .gridEntre #imgEt {
+      grid-area: imgE3; }
+    .colorEntre .gridEntre #pEntrec {
+      grid-area: letra4; }
+    .colorEntre .gridEntre #pEntreco {
+      grid-area: letra5; }
     .colorEntre .gridEntre .subEntrevista {
-      font-size: 25px;
+      font-size: 20px;
       font-family: 'Sansita Swashed', cursive;
-      color: #f56377;
-      max-width: 80%;
-      text-align: center;
-      padding-left: 30%;
-      padding-right: 5px;
-      margin: 0 auto; }
+      color: #722480;
+      -width: 80%;
+      text-align: justify;
+      margin-left: 150px; }
   .colorEntre .imgEnt {
     margin: 10px auto;
     display: block;
@@ -215,24 +281,17 @@
   .colorEntre .qEntrevista {
     font-size: 20px;
     font-family: 'Sansita Swashed', cursive;
-    color: #fc51c3;
-    text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-width: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 15px; }
+    color: #722480;
+    max-width: 80%;
+    text-align: justify;
+    margin-left: 150px; }
   .colorEntre .pEntrevista {
     font-size: 20px;
     font-family: 'Sansita Swashed', cursive;
-    color: #f56377;
+    color: #722480;
     max-width: 80%;
-    text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-width: 10px;
-    margin: 0 auto; }
+    text-align: justify;
+    margin-left: 150px; }
   .colorEntre .imgEntrevista {
     margin: 0 auto;
     display: block;
@@ -287,14 +346,14 @@
 .tituloArt {
   font-size: 40px;
   font-family: 'Montserrat Alternates', sans-serif;
-  color: #f77fcf;
+  color: #6e20ad;
   text-align: center;
   max-width: 100; }
 
 .parrafoArt {
   font-size: 25px;
   font-family: 'Sansita Swashed', cursive;
-  color: #cc0f28;
+  color: #722480;
   text-align: center;
   padding-left: 15%;
   padding-right: 15%;

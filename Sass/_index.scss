@@ -81,7 +81,7 @@
         .parrafoIni{
             font-size:25px;
             font-family: 'Sansita Swashed', cursive;
-            color: #14d5f7;
+            color: rgb(110, 32, 173);
             max-width: 80%;
             text-align: center;
             padding-left: 20%;
@@ -94,12 +94,90 @@
                 display: none !important;
             }
         }
-        
-        .imgIni{
-            margin:10px auto;
-            display:block;
-            width: 50%;
+
+        .gridIni{
+            display:grid;
+            grid-template-areas:
+            "tips articulo"
+            "reseña  entrevista";
+            grid-column-gap: 20px;
+            grid-row-gap: 20px;
+            justify-items: center;
+            justify-content: center;
+            align-self:center;
+
+            #tips{
+                grid-area: tips;
+                border: solid rgb(110, 32, 173);
+                background-color: rgb(212, 183, 236);
+            }
+              
+              #articulo{
+                grid-area: articulo;
+                border: solid rgb(110, 32, 173);
+                background-color: rgb(212, 183, 236);
+            }
+              
+              #reseña{
+                grid-area: reseña;
+                border: solid rgb(110, 32, 173);
+                background-color: rgb(212, 183, 236);
+            }
+
+            #entrevista{
+                grid-area:entrevista;
+                border: solid rgb(110, 32, 173);
+                background-color: rgb(212, 183, 236);
+            }
+
+            .imgIni{
+                margin:auto;
+                width: 50%;
+                height: 50%;
+                display:block;
+                transition: height 2s, width 1s;
+            }
+
+            .imgIni:hover{
+                height:52%;
+                width: 52%;
+            }
+    
+            .pGrid{
+                font-size:20px;
+                font-family:'Sansita Swashed', cursive;
+                color: rgb(114, 36, 128);
+                text-align: center;
+                max-width: 600px;
+            }
         }
+
+        @media(max-width:576px){
+            .gridIni{
+                grid-template-columns: 500px;
+                grid-row-gap: 30px;
+                grid-template-areas:
+            "tips" "articulo" "reseña" "entrevista";
+            }
+        }
+
+        @media(max-width: 576px){
+            .pGrid{
+                padding-left: 50px;
+                padding-right: 50px;
+                max-width: 576px;
+                font-size: 1.0em;
+                text-align: justify;
+            }
+        }
+
+        @media(max-width: 576px){
+            .imgIni{
+                width: 30%;
+                height: 30%;
+            }
+        }
+        
     }
 
     .form{

@@ -16,21 +16,57 @@
 
     .gridEntre{
         display:grid;
-        grid-template-columns: 30% 40%;
-        grid-column-gap:5px ;
-        grid-template-columns: 1fr 1fr;
-        align-self:center;
-        justify-items: center;
+        grid-template-areas:
+        "letra imgE"
+        "letra2 letra2"
+        "letra3 imgE2"
+        "letra4 letra4"
+        "letra5 imgE"3;
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+        justify-items:left;
+        justify-content: center;
+        align-self: center;
+
+        #pEntre{
+            grid-area: letra;
+        }
+
+        #imgE{
+            grid-area: imgE;
+        }
+
+        #pEntreD{
+            grid-area: letra2;
+        }
+
+        #imgEd{
+            grid-area: imgE2;
+        }
+
+        #pEntres{
+            grid-area: letra3;
+        }
+
+        #imgEt{
+            grid-area: imgE3;
+        }
+
+        #pEntrec{
+            grid-area: letra4;
+        }
+
+        #pEntreco{
+            grid-area: letra5;
+        }
 
         .subEntrevista{
-            font-size:25px;
+            font-size:20px;
             font-family:'Sansita Swashed', cursive;
-            color:rgb(245, 99, 119);
-            max-width: 80%;
-            text-align: center;
-            padding-left: 30%;
-            padding-right:5px;
-            margin:0 auto; 
+            color: rgb(114, 36, 128);
+            -width:80%;
+            text-align: justify;
+            margin-left: 150px;
         }
     }
 
@@ -43,26 +79,19 @@
     .qEntrevista{
         font-size:20px;
         font-family:'Sansita Swashed', cursive;
-        color: rgb(252, 81, 195);
-        text-align: center;
-        padding-left: 20px;
-        padding-right: 20px;
-        border-width: 10px;
-        margin-left: 20px;
-        margin-right: 20px;
-        margin-top: 15px;
+        color: rgb(114, 36, 128);
+        max-width:80%;
+        text-align: justify;
+        margin-left: 150px;
     }
 
     .pEntrevista{
         font-size:20px;
         font-family:'Sansita Swashed', cursive;
-        color:  rgb(245, 99, 119); 
+        color: rgb(114, 36, 128);
         max-width:80%;
-        text-align: center;
-        padding-left: 20px;
-        padding-right: 20px;
-        border-width: 10px;
-        margin:0 auto;
+        text-align: justify;
+        margin-left: 150px;
     }
 
     .imgEntrevista{
