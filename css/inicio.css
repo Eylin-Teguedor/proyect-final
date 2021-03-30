@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .encabezado {
   background-image: linear-gradient(315deg, #f896d7 0%, #d49ef3 74%);
   width: 100%;
@@ -95,11 +96,15 @@
     text-align: center;
     padding-left: 20px;
     padding-right: 20px;
-    border-width: 10px; }
+    border-width: 10px;
+    margin-left: 200px;
+    margin-right: 200px; }
   @media (max-width: 576px) {
     .colorTips .tituloTips {
+      margin-left: 50px;
+      margin-right: 50px;
       max-width: 576px;
-      font-size: 0.5em;
+      font-size: 1.5em;
       text-align: center; } }
   .colorTips .gridTips {
     display: grid;
@@ -145,22 +150,17 @@
     .colorTips .gridTips .imgT:hover {
       height: 220px;
       width: 320px; }
+  @media (max-width: 576px) {
+    .colorTips .gridTips {
+      grid-template-columns: 300px;
+      grid-row-gap: 30px;
+      grid-template-areas: "curcuma" "pimienta" "jengibre"; } }
   .colorTips .imgTips {
     margin: 10px auto;
-    width: 100;
-    height: 200;
+    width: 100px;
+    height: 200px;
     transition: height 2s, width 1s;
     display: block; }
-  .colorTips .tituloTips {
-    font-size: 40px;
-    font-family: 'Montserrat Alternates', sans-serif;
-    color: #f77fcf;
-    text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-width: 10px;
-    margin-left: 200px;
-    margin-right: 200px; }
   .colorTips .parrafoTips {
     font-size: 20px;
     font-family: 'Sansita Swashed', cursive;
@@ -169,6 +169,13 @@
     padding-left: 200px;
     padding-right: 200px;
     margin-top: 10px; }
+  @media (max-width: 576px) {
+    .colorTips .parrafoTips {
+      padding-left: 50px;
+      padding-right: 50px;
+      max-width: 576px;
+      font-size: 1.5em;
+      text-align: justify; } }
   .colorTips .videoT {
     text-align: center; }
 
@@ -231,7 +238,7 @@
     display: block;
     width: 20%; }
 
-.tituloDeb {
+.tituloRes {
   font-size: 40px;
   font-family: 'Sansita Swashed', cursive;
   color: #91382d;
@@ -241,15 +248,41 @@
   border-width: 10px;
   margin: 0 auto; }
 
-.pDebate {
-  font-size: 15px;
-  font-family: 'Sansita Swashed', cursive;
-  color: #f56377;
-  max-width: 100%;
-  text-align: center;
-  padding-left: 3%;
-  padding-right: 3%;
-  margin: 0 auto; }
+.gridRe {
+  display: grid;
+  grid-template-areas: "parrafo imagen" "parrafo2 parrafo2";
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  justify-items: left;
+  justify-content: center;
+  align-self: center; }
+  .gridRe #parrafo {
+    grid-area: parrafo; }
+  .gridRe #imagen {
+    grid-area: imagen; }
+  .gridRe #parrafoD {
+    grid-area: parrafo2; }
+  .gridRe .pReseña {
+    font-size: 20px;
+    font-family: 'Sansita Swashed', cursive;
+    color: #f56377;
+    max-width: 80%;
+    text-align: justify;
+    margin-left: 150px; }
+  .gridRe .imgR {
+    padding-top: 10px;
+    width: 90%;
+    height: 80%;
+    transition: height 2s, width 1s; }
+  .gridRe .imgR:hover {
+    height: 100%;
+    width: 90%; }
+
+.imgRe {
+  margin: 10px auto;
+  width: 40%;
+  height: 30%;
+  display: block; }
 
 .tituloArt {
   font-size: 40px;

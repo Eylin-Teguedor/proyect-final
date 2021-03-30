@@ -10,13 +10,16 @@
         padding-left: 20px;
         padding-right: 20px;
         border-width: 10px;
-        
+        margin-left: 200px;
+        margin-right: 200px;
     }
 
     @media(max-width: 576px){
         .tituloTips{
+            margin-left: 50px;
+            margin-right: 50px;
             max-width: 576px;
-            font-size: 0.5em;
+            font-size: 1.5em;
             text-align: center;
         }
     }
@@ -85,31 +88,25 @@
             width: 320px;
         }
     }
+    @media(max-width:576px){
+        .gridTips{
+            grid-template-columns: 300px;
+            grid-row-gap: 30px;
+            grid-template-areas:
+        "curcuma" "pimienta" "jengibre";
+        }
+    }
 
     .imgTips{
         margin:10px auto;
-        width: 100;
-        height: 200;
+        width: 100px;
+        height: 200px;
         transition: height 2s, width 1s;
         display:block;
         
     }
 
-    
-
-    .tituloTips{
-        font-size:40px;
-        font-family:'Montserrat Alternates', sans-serif;
-        color: rgb(247, 127, 207);
-        text-align: center;
-        padding-left: 20px;
-        padding-right: 20px;
-        border-width: 10px;
-        margin-left: 200px;
-        margin-right: 200px;
-      }
-      
-      .parrafoTips{
+    .parrafoTips{
         font-size:20px;
         font-family:'Sansita Swashed', cursive;
         color: rgb(39, 85, 116);
@@ -117,6 +114,16 @@
         padding-left:200px;
         padding-right:200px;
         margin-top: 10px;
+    }
+
+    @media(max-width: 576px){
+        .parrafoTips{
+            padding-left: 50px;
+            padding-right: 50px;
+            max-width: 576px;
+            font-size: 1.5em;
+            text-align: justify;
+        }
     }
 
     .videoT{
