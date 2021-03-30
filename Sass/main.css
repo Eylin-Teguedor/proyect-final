@@ -37,22 +37,22 @@
 }
 
 .navbar-light .navbar-brand {
-  color: #ee78cb;
+  color: #6e20ad;
 }
 
 .navbar-light .navbar-nav .show > .nav-link,
 .navbar-light .navbar-nav .nav-link.active {
-  color: #ee78cb;
+  color: #6e20ad;
   font-family: 'Dancing Script', cursive;
 }
 
 .navbar-light .navbar-nav .nav-link.disabled {
-  color: #ee78cb;
+  color: #6e20ad;
   font-family: 'Dancing Script', cursive;
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: #ee78cb;
+  color: #6e20ad;
   font-family: 'Dancing Script', cursive;
   font-size: 20px;
 }
@@ -70,7 +70,7 @@
 
 .cuerpoIni .carousel-inner {
   height: 500px;
-  width: 500px;
+  width: 100%;
 }
 
 @media (max-width: 576px) {
@@ -104,13 +104,13 @@
 }
 
 .form {
-  background-image: linear-gradient(315deg, #eec0c6 0%, #b5edf7 74%);
+  background-image: linear-gradient(315deg, #f896d7 0%, #d49ef3 74%);
   height: 200px;
 }
 
 .form #registrate {
   margin-top: 15px;
-  color: #fc51c3;
+  color: #390b3d;
   font-size: 20px;
   text-decoration: none;
   font-family: 'Sansita Swashed', cursive;
@@ -124,7 +124,7 @@
 .colorTips .tituloTips {
   font-size: 40px;
   font-family: 'Montserrat Alternates', sans-serif;
-  color: #f77fcf;
+  color: #6e20ad;
   text-align: center;
   padding-left: 20px;
   padding-right: 20px;
@@ -185,7 +185,7 @@
 .colorTips .gridTips .listaTabla {
   font-size: 17px;
   font-family: 'Sansita Swashed', cursive;
-  color: #275574;
+  color: #722480;
   text-align: justify;
   margin-left: 20px;
 }
@@ -193,14 +193,14 @@
 .colorTips .gridTips .tituloTabla {
   font-size: 20px;
   font-family: 'Sansita Swashed', cursive;
-  color: #fc51c3;
+  color: #6e20ad;
   text-align: center;
 }
 
 .colorTips .gridTips .parrafoTabla {
   font-size: 17px;
   font-family: 'Sansita Swashed', cursive;
-  color: #275574;
+  color: #722480;
   text-align: center;
   max-width: 300px;
 }
@@ -239,7 +239,7 @@
 .colorTips .parrafoTips {
   font-size: 20px;
   font-family: 'Sansita Swashed', cursive;
-  color: #275574;
+  color: #722480;
   text-align: justify;
   padding-left: 200px;
   padding-right: 200px;
@@ -341,7 +341,7 @@
 .tituloRes {
   font-size: 40px;
   font-family: 'Sansita Swashed', cursive;
-  color: #91382d;
+  color: #6e20ad;
   text-align: center;
   padding-left: 20px;
   padding-right: 20px;
@@ -385,7 +385,7 @@
 .gridRe .pReseña {
   font-size: 20px;
   font-family: 'Sansita Swashed', cursive;
-  color: #f56377;
+  color: #722480;
   max-width: 80%;
   text-align: justify;
   margin-left: 150px;
