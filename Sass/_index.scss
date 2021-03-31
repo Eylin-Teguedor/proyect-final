@@ -157,26 +157,47 @@
                 grid-template-columns: 500px;
                 grid-row-gap: 30px;
                 grid-template-areas:
-            "tips" "articulo" "reseña" "entrevista";
+                "tips" "articulo" "reseña" "entrevista";
+                .pGrid{
+                    padding-left: 50px;
+                    padding-right: 50px;
+                    max-width: 576px;
+                    font-size: 1.0em;
+                    text-align: justify;
+                }
+                .imgIni{
+                    width: 30%;
+                    height: 30%;
+                }
             }
         }
 
-        @media(max-width: 576px){
-            .pGrid{
-                padding-left: 50px;
-                padding-right: 50px;
-                max-width: 576px;
-                font-size: 1.0em;
-                text-align: justify;
-            }
+        @media(max-width: 698px){
+            .gridIni{
+                grid-template-columns: 500px;
+                grid-row-gap: 30px;
+                grid-template-areas:
+                "tips" "articulo" "reseña" "entrevista";
+                .pGrid{
+                    padding-left: 50px;
+                    padding-right: 50px;
+                    max-width: 576px;
+                    font-size: 1.0em;
+                    text-align: justify;
+                }
+                .imgIni{
+                    width: 50%;
+                    height: 50%;
+                    transition: height 2s, width 1s;
+                }
+    
+                .imgIni:hover{
+                    height:52%;
+                    width: 52%;
+                }
+            } 
         }
 
-        @media(max-width: 576px){
-            .imgIni{
-                width: 30%;
-                height: 30%;
-            }
-        }
         
     }
 

@@ -7,7 +7,7 @@
         font-family:'Montserrat Alternates', sans-serif;
         color: rgb(247, 127, 207);
         text-align: center;
-        padding-left: 20px auto;
+        padding-left: 20px;
         border-width: 10px;
         margin:20px auto;
         width:100%;
@@ -63,13 +63,13 @@
             font-size:20px;
             font-family:'Sansita Swashed', cursive;
             color: rgb(114, 36, 128);
-            max-width:80%;
+            max-width:50%;
             text-align: justify;
-            margin-left: 150px;
+            margin-left: 100px;
         }
 
         .imgEnt{
-            margin:auto;
+            margin-left:100px;
             display:block;
             padding-top: 50px;
             width: 90%;
@@ -82,7 +82,7 @@
             color: rgb(228, 34, 163);
             max-width:80%;
             text-align: justify;
-            margin-left: 150px;
+            margin-left: 100px;
         }
     
         .pEntrevista{
@@ -91,7 +91,29 @@
             color: rgb(114, 36, 128);
             max-width:80%;
             text-align: justify;
-            margin-left: 150px;
+            margin-left: 100px;
+        }
+    }
+
+    @media(max-width: 576px){
+        .gridEntre{
+            display:grid;
+            grid-template-areas:
+            "letra" "imgE"
+            "letra3" "imgE2"
+            "letra4""letra4"
+            "letra5" "imgE3";
+        }
+    }
+
+    @media(max-width: 698px){
+        .gridEntre{
+            display:grid;
+            grid-template-areas:
+            "letra" "imgE"
+            "letra3" "imgE2"
+            "letra4""letra4"
+            "letra5" "imgE3";
         }
     }
 

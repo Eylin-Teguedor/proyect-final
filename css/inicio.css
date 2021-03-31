@@ -114,18 +114,34 @@
     .cuerpoIni .gridIni {
       grid-template-columns: 500px;
       grid-row-gap: 30px;
-      grid-template-areas: "tips" "articulo" "reseña" "entrevista"; } }
-  @media (max-width: 576px) {
-    .cuerpoIni .pGrid {
-      padding-left: 50px;
-      padding-right: 50px;
-      max-width: 576px;
-      font-size: 1.0em;
-      text-align: justify; } }
-  @media (max-width: 576px) {
-    .cuerpoIni .imgIni {
-      width: 30%;
-      height: 30%; } }
+      grid-template-areas: "tips" "articulo" "reseña" "entrevista"; }
+      .cuerpoIni .gridIni .pGrid {
+        padding-left: 50px;
+        padding-right: 50px;
+        max-width: 576px;
+        font-size: 1.0em;
+        text-align: justify; }
+      .cuerpoIni .gridIni .imgIni {
+        width: 30%;
+        height: 30%; } }
+  @media (max-width: 698px) {
+    .cuerpoIni .gridIni {
+      grid-template-columns: 500px;
+      grid-row-gap: 30px;
+      grid-template-areas: "tips" "articulo" "reseña" "entrevista"; }
+      .cuerpoIni .gridIni .pGrid {
+        padding-left: 50px;
+        padding-right: 50px;
+        max-width: 576px;
+        font-size: 1.0em;
+        text-align: justify; }
+      .cuerpoIni .gridIni .imgIni {
+        width: 50%;
+        height: 50%;
+        transition: height 2s, width 1s; }
+      .cuerpoIni .gridIni .imgIni:hover {
+        height: 52%;
+        width: 52%; } }
 
 .form {
   background-image: linear-gradient(315deg, #f896d7 0%, #d49ef3 74%);
@@ -238,7 +254,7 @@
     font-family: 'Montserrat Alternates', sans-serif;
     color: #f77fcf;
     text-align: center;
-    padding-left: 20px auto;
+    padding-left: 20px;
     border-width: 10px;
     margin: 20px auto;
     width: 100%;
@@ -271,11 +287,11 @@
       font-size: 20px;
       font-family: 'Sansita Swashed', cursive;
       color: #722480;
-      max-width: 80%;
+      max-width: 50%;
       text-align: justify;
-      margin-left: 150px; }
+      margin-left: 100px; }
     .colorEntre .gridEntre .imgEnt {
-      margin: auto;
+      margin-left: 100px;
       display: block;
       padding-top: 50px;
       width: 90%;
@@ -286,14 +302,22 @@
       color: #e422a3;
       max-width: 80%;
       text-align: justify;
-      margin-left: 150px; }
+      margin-left: 100px; }
     .colorEntre .gridEntre .pEntrevista {
       font-size: 20px;
       font-family: 'Sansita Swashed', cursive;
       color: #722480;
       max-width: 80%;
       text-align: justify;
-      margin-left: 150px; }
+      margin-left: 100px; }
+  @media (max-width: 576px) {
+    .colorEntre .gridEntre {
+      display: grid;
+      grid-template-areas: "letra" "imgE" "letra3" "imgE2" "letra4" "letra4" "letra5" "imgE3"; } }
+  @media (max-width: 698px) {
+    .colorEntre .gridEntre {
+      display: grid;
+      grid-template-areas: "letra" "imgE" "letra3" "imgE2" "letra4" "letra4" "letra5" "imgE3"; } }
 
 .tituloRes {
   font-size: 40px;
