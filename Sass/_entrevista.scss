@@ -18,10 +18,9 @@
         display:grid;
         grid-template-areas:
         "letra imgE"
-        "letra2 letra2"
         "letra3 imgE2"
         "letra4 letra4"
-        "letra5 imgE"3;
+        "letra5 imgE3";
         grid-column-gap: 5px;
         grid-row-gap: 5px;
         justify-items:left;
@@ -36,27 +35,27 @@
             grid-area: imgE;
         }
 
-        #pEntreD{
+        #segunP{
             grid-area: letra2;
         }
 
-        #imgEd{
+        #segunI{
             grid-area: imgE2;
         }
 
-        #pEntres{
+        #tresP{
             grid-area: letra3;
         }
 
-        #imgEt{
+        #tresI{
             grid-area: imgE3;
         }
 
-        #pEntrec{
+        #cuartoP{
             grid-area: letra4;
         }
 
-        #pEntreco{
+        #cincoP{
             grid-area: letra5;
         }
 
@@ -64,39 +63,36 @@
             font-size:20px;
             font-family:'Sansita Swashed', cursive;
             color: rgb(114, 36, 128);
-            -width:80%;
+            max-width:80%;
+            text-align: justify;
+            margin-left: 150px;
+        }
+
+        .imgEnt{
+            margin:auto;
+            display:block;
+            padding-top: 50px;
+            width: 90%;
+            height: 85%;
+        }
+    
+        .qEntrevista{
+            font-size:20px;
+            font-family:'Sansita Swashed', cursive;
+            color: rgb(228, 34, 163);
+            max-width:80%;
+            text-align: justify;
+            margin-left: 150px;
+        }
+    
+        .pEntrevista{
+            font-size:20px;
+            font-family:'Sansita Swashed', cursive;
+            color: rgb(114, 36, 128);
+            max-width:80%;
             text-align: justify;
             margin-left: 150px;
         }
     }
 
-    .imgEnt{
-        margin:10px auto;
-        display:block;
-        width: 50%;
-    }
-
-    .qEntrevista{
-        font-size:20px;
-        font-family:'Sansita Swashed', cursive;
-        color: rgb(114, 36, 128);
-        max-width:80%;
-        text-align: justify;
-        margin-left: 150px;
-    }
-
-    .pEntrevista{
-        font-size:20px;
-        font-family:'Sansita Swashed', cursive;
-        color: rgb(114, 36, 128);
-        max-width:80%;
-        text-align: justify;
-        margin-left: 150px;
-    }
-
-    .imgEntrevista{
-        margin:0 auto;
-        display:block;
-        width: 20%;
-    }
 }

@@ -245,7 +245,7 @@
     height: 100px; }
   .colorEntre .gridEntre {
     display: grid;
-    grid-template-areas: "letra imgE" "letra2 letra2" "letra3 imgE2" "letra4 letra4" "letra5 imgE" 3;
+    grid-template-areas: "letra imgE" "letra3 imgE2" "letra4 letra4" "letra5 imgE3";
     grid-column-gap: 5px;
     grid-row-gap: 5px;
     justify-items: left;
@@ -255,47 +255,45 @@
       grid-area: letra; }
     .colorEntre .gridEntre #imgE {
       grid-area: imgE; }
-    .colorEntre .gridEntre #pEntreD {
+    .colorEntre .gridEntre #segunP {
       grid-area: letra2; }
-    .colorEntre .gridEntre #imgEd {
+    .colorEntre .gridEntre #segunI {
       grid-area: imgE2; }
-    .colorEntre .gridEntre #pEntres {
+    .colorEntre .gridEntre #tresP {
       grid-area: letra3; }
-    .colorEntre .gridEntre #imgEt {
+    .colorEntre .gridEntre #tresI {
       grid-area: imgE3; }
-    .colorEntre .gridEntre #pEntrec {
+    .colorEntre .gridEntre #cuartoP {
       grid-area: letra4; }
-    .colorEntre .gridEntre #pEntreco {
+    .colorEntre .gridEntre #cincoP {
       grid-area: letra5; }
     .colorEntre .gridEntre .subEntrevista {
       font-size: 20px;
       font-family: 'Sansita Swashed', cursive;
       color: #722480;
-      -width: 80%;
+      max-width: 80%;
       text-align: justify;
       margin-left: 150px; }
-  .colorEntre .imgEnt {
-    margin: 10px auto;
-    display: block;
-    width: 50%; }
-  .colorEntre .qEntrevista {
-    font-size: 20px;
-    font-family: 'Sansita Swashed', cursive;
-    color: #722480;
-    max-width: 80%;
-    text-align: justify;
-    margin-left: 150px; }
-  .colorEntre .pEntrevista {
-    font-size: 20px;
-    font-family: 'Sansita Swashed', cursive;
-    color: #722480;
-    max-width: 80%;
-    text-align: justify;
-    margin-left: 150px; }
-  .colorEntre .imgEntrevista {
-    margin: 0 auto;
-    display: block;
-    width: 20%; }
+    .colorEntre .gridEntre .imgEnt {
+      margin: auto;
+      display: block;
+      padding-top: 50px;
+      width: 90%;
+      height: 85%; }
+    .colorEntre .gridEntre .qEntrevista {
+      font-size: 20px;
+      font-family: 'Sansita Swashed', cursive;
+      color: #e422a3;
+      max-width: 80%;
+      text-align: justify;
+      margin-left: 150px; }
+    .colorEntre .gridEntre .pEntrevista {
+      font-size: 20px;
+      font-family: 'Sansita Swashed', cursive;
+      color: #722480;
+      max-width: 80%;
+      text-align: justify;
+      margin-left: 150px; }
 
 .tituloRes {
   font-size: 40px;
