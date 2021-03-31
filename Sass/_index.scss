@@ -1,0 +1,215 @@
+.encabezado{
+        background-image: linear-gradient(315deg, #f896d7 0%, #d49ef3 74%);
+        width:100%;
+        height: 140px;
+
+        .nombreP{
+            font-family: 'Dancing Script', cursive;
+            font-size:60px;
+            color: white;
+            text-align: center;
+            width: 100%;
+            padding-top: 10px;
+        }
+
+        .subtituloIni {
+            font-size:40px;
+            font-family: 'Dancing Script', cursive;
+            text-align: center;
+            margin-top: 0 auto;
+            color: white;
+        }
+    }
+
+    .bg-light {
+        background-color: #fcf7f9 !important; 
+        border:solid rgb(237, 126, 252);
+    }
+
+    .navbar{
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+
+    .navbar-brand{
+        font-family:'Dancing Script', cursive;
+    }
+
+    .navbar-light .navbar-brand {
+        color: rgb(110, 32, 173); 
+    }
+
+    .navbar-light .navbar-nav .show > .nav-link,
+    .navbar-light .navbar-nav .nav-link.active {
+        color:  rgb(110, 32, 173); 
+        font-family:'Dancing Script', cursive;
+    }
+
+    .navbar-light .navbar-nav .nav-link.disabled {
+        color:  rgb(110, 32, 173); 
+        font-family:'Dancing Script', cursive;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        color:  rgb(110, 32, 173); 
+        font-family:'Dancing Script', cursive;
+        font-size: 20px;
+    }
+
+    .cuerpoIni {
+        background-color: rgb(253, 249, 246);
+        width: 100%;
+        margin:0 auto;
+
+        .carousel-inner img {
+            width: 100%;
+            max-height: 500px;
+        }
+        
+        .carousel-inner{
+         height: 500px;
+         width: 100%;
+        }
+        
+        @media(max-width:576px){
+            .carousel-inner{
+                width:576px;
+                height:400px;
+            }
+        }
+        
+        .parrafoIni{
+            font-size:25px;
+            font-family: 'Sansita Swashed', cursive;
+            color: rgb(110, 32, 173);
+            max-width: 80%;
+            text-align: center;
+            padding-left: 20%;
+            padding-right:20%;
+            margin:0 auto;
+        }
+        
+        @media(max-width: 576px){
+            .parrafoIni{
+                display: none !important;
+            }
+        }
+
+        .gridIni{
+            display:grid;
+            grid-template-areas:
+            "tips articulo"
+            "reseña  entrevista";
+            grid-column-gap: 20px;
+            grid-row-gap: 20px;
+            justify-items: center;
+            justify-content: center;
+            align-self:center;
+
+            #tips{
+                grid-area: tips;
+                border: solid rgb(110, 32, 173);
+                background-color: rgb(212, 183, 236);
+            }
+              
+              #articulo{
+                grid-area: articulo;
+                border: solid rgb(110, 32, 173);
+                background-color: rgb(212, 183, 236);
+            }
+              
+              #reseña{
+                grid-area: reseña;
+                border: solid rgb(110, 32, 173);
+                background-color: rgb(212, 183, 236);
+            }
+
+            #entrevista{
+                grid-area:entrevista;
+                border: solid rgb(110, 32, 173);
+                background-color: rgb(212, 183, 236);
+            }
+
+            .imgIni{
+                margin:auto;
+                width: 50%;
+                height: 50%;
+                display:block;
+                transition: height 2s, width 1s;
+            }
+
+            .imgIni:hover{
+                height:52%;
+                width: 52%;
+            }
+    
+            .pGrid{
+                font-size:20px;
+                font-family:'Sansita Swashed', cursive;
+                color: rgb(114, 36, 128);
+                text-align: center;
+                max-width: 600px;
+            }
+        }
+
+        @media(max-width:576px){
+            .gridIni{
+                grid-template-columns: 500px;
+                grid-row-gap: 30px;
+                grid-template-areas:
+                "tips" "articulo" "reseña" "entrevista";
+                .pGrid{
+                    padding-left: 50px;
+                    padding-right: 50px;
+                    max-width: 576px;
+                    font-size: 1.0em;
+                    text-align: justify;
+                }
+                .imgIni{
+                    width: 30%;
+                    height: 30%;
+                }
+            }
+        }
+
+        @media(max-width: 698px){
+            .gridIni{
+                grid-template-columns: 500px;
+                grid-row-gap: 30px;
+                grid-template-areas:
+                "tips" "articulo" "reseña" "entrevista";
+                .pGrid{
+                    padding-left: 50px;
+                    padding-right: 50px;
+                    max-width: 576px;
+                    font-size: 1.0em;
+                    text-align: justify;
+                }
+                .imgIni{
+                    width: 50%;
+                    height: 50%;
+                    transition: height 2s, width 1s;
+                }
+    
+                .imgIni:hover{
+                    height:52%;
+                    width: 52%;
+                }
+            } 
+        }
+
+        
+    }
+
+    .form{
+        background-image: linear-gradient(315deg, #f896d7 0%, #d49ef3 74%);
+        height: 200px;
+
+        #registrate{
+            margin-top: 15px;
+            color:rgb(57, 11, 61);
+            font-size: 20px;
+            text-decoration: none;
+            font-family:'Sansita Swashed', cursive;
+        }
+    }

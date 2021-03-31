@@ -1,0 +1,120 @@
+.colorEntre{
+    background-color:rgb(253, 249, 246);
+    width: 100%;
+
+    .tituloEntrevista{
+        font-size:40px;
+        font-family:'Montserrat Alternates', sans-serif;
+        color: rgb(247, 127, 207);
+        text-align: center;
+        padding-left: 20px;
+        border-width: 10px;
+        margin:20px auto;
+        width:100%;
+        height: 100px;
+    }
+
+    .gridEntre{
+        display:grid;
+        grid-template-areas:
+        "letra imgE"
+        "letra3 imgE2"
+        "letra4 letra4"
+        "letra5 imgE3";
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+        justify-items:left;
+        justify-content: center;
+        align-self: center;
+
+        #pEntre{
+            grid-area: letra;
+        }
+
+        #imgE{
+            grid-area: imgE;
+        }
+
+        #segunP{
+            grid-area: letra2;
+        }
+
+        #segunI{
+            grid-area: imgE2;
+        }
+
+        #tresP{
+            grid-area: letra3;
+        }
+
+        #tresI{
+            grid-area: imgE3;
+        }
+
+        #cuartoP{
+            grid-area: letra4;
+        }
+
+        #cincoP{
+            grid-area: letra5;
+        }
+
+        .subEntrevista{
+            font-size:20px;
+            font-family:'Sansita Swashed', cursive;
+            color: rgb(114, 36, 128);
+            max-width:50%;
+            text-align: justify;
+            margin-left: 100px;
+        }
+
+        .imgEnt{
+            margin-left:100px;
+            display:block;
+            padding-top: 50px;
+            width: 90%;
+            height: 85%;
+        }
+    
+        .qEntrevista{
+            font-size:20px;
+            font-family:'Sansita Swashed', cursive;
+            color: rgb(228, 34, 163);
+            max-width:80%;
+            text-align: justify;
+            margin-left: 100px;
+        }
+    
+        .pEntrevista{
+            font-size:20px;
+            font-family:'Sansita Swashed', cursive;
+            color: rgb(114, 36, 128);
+            max-width:80%;
+            text-align: justify;
+            margin-left: 100px;
+        }
+    }
+
+    @media(max-width: 576px){
+        .gridEntre{
+            display:grid;
+            grid-template-areas:
+            "letra" "imgE"
+            "letra3" "imgE2"
+            "letra4""letra4"
+            "letra5" "imgE3";
+        }
+    }
+
+    @media(max-width: 698px){
+        .gridEntre{
+            display:grid;
+            grid-template-areas:
+            "letra" "imgE"
+            "letra3" "imgE2"
+            "letra4""letra4"
+            "letra5" "imgE3";
+        }
+    }
+
+}

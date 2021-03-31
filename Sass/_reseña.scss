@@ -1,0 +1,62 @@
+.tituloRes{
+    font-size:40px;
+    font-family:'Sansita Swashed', cursive;
+    color: rgb(110, 32, 173);
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-width: 10px;
+    margin:0 auto;
+}
+
+.gridRe{
+    display:grid;
+    grid-template-areas:
+    "parrafo imagen"
+    "parrafo2 parrafo2";
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    justify-items:left;
+    justify-content: center;
+    align-self: center;
+
+    #parrafo{
+        grid-area: parrafo;
+      }
+      
+      #imagen{
+        grid-area: imagen;
+      }
+      
+      #parrafoD{
+        grid-area: parrafo2;
+      }
+
+    .pReseña{
+        font-size:20px;
+        font-family:'Sansita Swashed', cursive;
+        color: rgb(114, 36, 128);
+        max-width:80%;
+        text-align: justify;
+        margin-left: 150px;
+    }
+
+    .imgR{
+        padding-top: 10px;
+        width: 90%;
+        height: 80%;
+        transition: height 2s, width 1s;
+    }
+
+    .imgR:hover{
+        height:100%;
+        width: 90%;
+    }
+}
+
+.imgRe{
+    margin:10px auto;
+    width: 40%;
+    height: 30%;
+    display:block;
+}
